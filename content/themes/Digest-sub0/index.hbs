@@ -12,6 +12,27 @@
                     A collection of {{plural pagination.total empty="0 issues" singular="% issue" plural="% issues"}}
                 {{/if}}
             </div>
+
+ <figure class="kg-card kg-code-card">
+
+    {{!-- Main --}}
+    <main id="main">
+
+        <div>
+            <h2>Hey 👋</h2>
+            <p>My name’s Dave. I’m a Web Designer and Front-end Developer based in Bristol, currently working at Ghost as Developer Advocate.</p>
+        </div>
+
+        {{!-- Featured Post --}}
+        {{#is "home"}}
+        {{#get "posts" filter="featured:true" limit="1" as |featured_post|}}
+            {{#foreach featured_post}}
+                <article class="post featured">
+
+<figcaption>Snippet from a customised index.hbs file</figcaption>
+
+</figure>
+
         </header>
     </section>
 
